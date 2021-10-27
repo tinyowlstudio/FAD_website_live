@@ -6,6 +6,7 @@
   <title>fen</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/phv3qab.css">
+    <script src="js/java.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
@@ -35,7 +36,7 @@
                 A fake / hidden checkbox is used as click reciever,
                 so you can use the :checked selector on it.
                 -->
-                <input type="checkbox"/>
+                <input id="checkbox" type="checkbox"/>
 
                 <!--
                 Some spans to act as a hamburger.
@@ -52,13 +53,13 @@
                 but hey, it's pure CSS magic.
                 -->
                 <ul id="menu">
-                  <li><a href="#about">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#stories">Stories</a></li>
-                    <li><a href="#purchase">Purchase</a></li>
-                    <li><a href="#locations">Locations</a></li>
-                    <li><a href="#contact-us">Contact us</a></li>
+                  <li class="nav_mobile" onclick="hideMenu();"><a href="#home">Home</a></li>
+                  <li class="nav_mobile" onclick="hideMenu();"><a href="#about">About</a></li>
+                    <li class="nav_mobile" onclick="hideMenu();"><a href="#features_mobile">Features</a></li>
+                    <li class="nav_mobile" onclick="hideMenu();"><a href="#stories">Stories</a></li>
+                    <li class="nav_mobile" onclick="hideMenu();"><a href="#purchase">Purchase</a></li>
+                    <li class="nav_mobile" onclick="hideMenu();"><a href="#locations">Locations</a></li>
+                    <li class="nav_mobile" onclick="hideMenu();"><a href="#contact-us">Contact us</a></li>
 <!--                  <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>-->
                 </ul>
               </div>
@@ -310,5 +311,4 @@
         </footer>
     </div>
 </body>  
-    
 </html>
