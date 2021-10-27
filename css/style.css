@@ -41,7 +41,8 @@ body {
   display: block;
   position: relative;
   top: 10px;
-  left: 10px;
+  left: 300px;
+    width: 5%;
   
   z-index: 1;
   
@@ -148,8 +149,8 @@ body {
 #menu
 {
   position: absolute;
-  width: 190px;
-  margin: -100px 0 0 -50px;
+  width: 220px;
+  margin: -100px 0 0 -350px;
   padding: 100px;
   padding-top: 90px;
     height: 812px;
@@ -160,7 +161,7 @@ body {
   /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -284,7 +285,7 @@ p {
 }
 
 .home .right img{
-    width: 80%;
+    width: 100%;
 }
 
 .about {
@@ -309,9 +310,11 @@ p {
 
 .about .right{
 /*    background-color: antiquewhite;*/
-    width: 50%;
-    padding: 0 5% 0 10%;
+    width: 100%;
+    padding: 0 0% 400px 10%;
     margin-top: -53px;
+    margin-right: -85px;
+    overflow: hidden;
 }
 
 .timeline {
@@ -416,13 +419,13 @@ p {
 }
 
 .stories .bobette{
-    padding: 0 0 0 800px;
+    padding: 0 0 0 55%;
     width: 45%;
 }
 
 .purchase {
     background-color: #638269;
-     padding: 70px 5%;
+     padding: 30px 5%;
     color: white;
     display: flex;
     align-items: center;
@@ -434,6 +437,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-right: 5%;
+    padding-top: 10px;
 }
 
 .purchase img {
@@ -445,11 +449,12 @@ p {
 
 .purchase .right {
     width: 45%;
-    padding-left: 1%;
+    padding-left: 10%;
 }
 
 .purchase h2 {
     border-color: white;
+    width: 98%;
 }
 
 
@@ -459,6 +464,7 @@ p {
     background-repeat: no-repeat;
     padding: 70px 5%;
     display: flex;
+    justify-content: space-between;
 }
 
 .locations .left{
@@ -466,7 +472,7 @@ p {
 }
 
 .locations .right{
-    padding-left: 5%;
+    text-align: right;
     width: 50%;
 }
 
@@ -503,42 +509,48 @@ p {
     background-repeat: no-repeat;
     padding: 70px 5%;
     display: flex;
+    justify-content: space-between;
     color: white;
 }
 
 .contact-us h2 {
     border-color: white;
 }
-
-.contact-us img{
-    width: 10%;
-}
     
 .contact-us .left{
-    width: 45%;
+    width: 48%;
 }
 
 .contact-us .right{
-    padding-left: 10%;
-    width: 80%;
+    text-align: right;
+    width: 40%;
+    padding-right: 5px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
+
+/*
+.contact-us img{
+    width: 20%;
+}
+*/
 
 .contact-us h5 {
     width: 100%;
 }
 
 .contact-us .box{
-    margin-top: -50px;
-    margin-left: -40px;
-    margin-right: 80px;
-    width: 20%;
+/*    margin-top: -50px;*/
+/*    margin-left: -40px;*/
+/*    margin-right: 80px;*/
+    padding: 5% 0 5% 5%;
+    width: 25%;
     text-align: center;
 }
 
 .box img {
-    width: 70%;
+    width: 100%;
 }
 
 .contact-us .icons{
@@ -588,6 +600,7 @@ footer {
         
         nav {
             display: none;
+            background-color: transparent;
         }
 
         h1 {
@@ -648,15 +661,24 @@ footer {
         .about {
             background-image: none;
             background-color: #638269;
-            height: 1000px;
             color: white;
-            padding: 40px 20px; 
+            padding: 45px 20px; 
             font-size: 2em;
-            height: 1600px;
+            height: 900px;
         }
         
         .about h2 {
-            width: 90%;
+            width: 100%;
+        }
+        
+        .about h4 {
+            font-size: 0.8em;
+            padding: 10px 0;
+        }
+        
+        .about p {
+            font-size: 0.65em;
+            padding-bottom: 10px;
         }
         
         .about .left {
@@ -669,15 +691,14 @@ footer {
 
         .timeline {
             background-image: url(../images/timeline_mobile_backgrounde-09.jpg);
-            padding-left: 0px;
-            height: 1760px;
+            padding: 45px 0px;
+            height: 1770px;
         }
 
         .timeline h2 {
-            width: 70%;
-            padding-left: 30%;
+            width: 55%;
             margin-bottom: 30px;
-            margin-left: 10%;
+            margin-left: 40%;
         }
         
         .timeline h3{
@@ -690,7 +711,7 @@ footer {
         .timeline p{
             padding-left: 40%;
             padding-bottom: 20px;
-            width: 70%;
+            width: 55%;
             font-size: 1.2em;
         }
 
@@ -704,7 +725,7 @@ footer {
             background-image: none;
             background-color: #638269;
             height: 630px;
-            padding: 50px 30px;
+            padding: 45px 30px;
             display: block;
             font-size: 1.2em;
             color: white;
@@ -722,7 +743,7 @@ footer {
         }
 
         .stories {
-             padding: 50px 30px;
+             padding: 45px 30px;
         }
 
         .stories h2{
@@ -744,7 +765,7 @@ footer {
         }
 
         .purchase {
-            padding: 50px 30px;
+            padding: 45px 30px;
             display: block;
         }
 
@@ -774,7 +795,7 @@ footer {
         }
  
         .locations {
-            padding: 50px 30px;
+            padding: 45px 30px;
         }
 
         .locations .left{
@@ -824,7 +845,7 @@ footer {
         .contact-us {
             background-image: none;
             background-color: #638269; 
-            padding: 50px 30px;
+            padding: 45px 30px;
             display: block;
             height: 750px;
         }
