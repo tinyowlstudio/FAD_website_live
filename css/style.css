@@ -305,7 +305,7 @@ p {
 }
 
 .about .left {
-    width: 60%;
+    width: 80%;
 }
 
 .about .right{
@@ -319,7 +319,7 @@ p {
 
 .timeline {
 /*    background-color:deeppink;*/
-    padding: 70px 15% 0 440px;
+    padding: 70px 15% 0 840px;
     background-image: url(../images/bg-05.png);
 /*    background-size: cover;*/
     background-repeat: no-repeat;
@@ -328,26 +328,26 @@ p {
 }
 
 .timeline h2 {
-    width: 40%;
+    width: 60%;
     margin-bottom: 15px;
-    margin-left: 630px;
+    margin-left: 300px;
 }
 .timeline h3{
     border-bottom: 1px solid black;
-    padding-left: 630px;
-    width: 40%;
+    padding-left: 300px;
+    width: 60%;
 }
 
 .timeline p{
-    padding-left: 630px;
+    padding-left: 300px;
     color: #B4BBE0;
     padding-bottom: 20px;
-    width: 470px;
+    width: 350px;
 }
 
 .timeline img {
     padding-bottom: 50px;
-    padding-left: 630px;
+    padding-left: 300px;
 }
 
 #features {
@@ -399,6 +399,12 @@ p {
 #features .item {
     width: 40%;
 }
+
+#features .phone {
+    width: 40%;
+    padding-left: 10px;
+}
+
 .side{
     padding: 0;
     margin-right: -95px;
@@ -413,6 +419,9 @@ p {
      padding: 70px 5%;
 }
 
+.stories h2{
+    width: 30%;
+}
 .stories .bob{
     padding-top: 50px;
     width: 45%;
@@ -477,11 +486,13 @@ p {
 }
 
 .locations p{
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    width: 60%;
 }
 
 .locations input{
     margin-bottom: 30px;
+    margin-top: 20px;
     height: 10px;
     padding: 10px;
     width: 47%;
@@ -642,6 +653,7 @@ footer {
         .home .left h1 {
             padding-left: 90px;
             font-size: 2em;
+            line-height: 37px;
             margin-top: -20px;
         }
 
@@ -655,7 +667,8 @@ footer {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 5%;
+            padding-top: 13%;
+            width: 80%;
         }
 
         .about {
@@ -703,9 +716,9 @@ footer {
         
         .timeline h3{
             border-bottom: 1px solid black;
-            padding-left: 30%;
-            margin-left: 10%;
-            width: 20%;
+            padding-left: 10%;
+            margin-left: 30%;
+            width: 50%;
         }
 
         .timeline p{
@@ -721,10 +734,11 @@ footer {
         #features {
             display: none;
         }
+        
         #features_mobile{
             background-image: none;
             background-color: #638269;
-            height: 630px;
+            height: 2950px;
             padding: 45px 30px;
             display: block;
             font-size: 1.2em;
@@ -732,12 +746,32 @@ footer {
         }
         
         #features_mobile h{
-            font-size: 2em;
+            font-size: 3em;
+            font-weight: bold;
         }
         
-        .item p{
-            width: 250%;
+        #features_mobile h2{
+            width: 90%;
+            border-color: white;
         }
+        
+        #features_mobile ul{
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+        
+        #features_mobile p{
+            padding-bottom: 20px;
+        }
+        
+        #features_mobile img{
+            padding-bottom: 20px;
+        }
+        
+        #features_mobile .phone-mobile{
+            padding-left: 70px;
+        }
+        
         .side{
             padding-right: 0px;
         }
@@ -902,7 +936,7 @@ footer {
         .contact-us .icons{
             padding-top: 15px;
             padding-bottom: 20px;
-            font-size: 3em;
+            font-size: 2em;
         }
 
         .button
