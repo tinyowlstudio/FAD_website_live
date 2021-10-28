@@ -342,7 +342,7 @@ p {
     padding-left: 300px;
     color: #B4BBE0;
     padding-bottom: 20px;
-    width: 350px;
+
 }
 
 .timeline img {
@@ -401,16 +401,15 @@ p {
 }
 
 #features .phone {
-    width: 40%;
-    padding-left: 10px;
+    width: 18%;
+    padding-left: 10%;
 }
 
 .side{
     padding: 0;
-    margin-right: -95px;
-    width: 50%;
+    margin-right: -5.5%;
+    width: 65%;
 }
-
 
 .stories {
 /*    background-color: beige;*/
