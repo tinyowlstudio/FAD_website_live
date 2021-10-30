@@ -1,10 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {   
@@ -16,16 +13,85 @@ body {
     margin: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .mobile{
     display: none;
-        }
+}
 
 .container {
     width: 100%;
 }
 
-/*        menu nav*/
-        /*
+.header{
+    width: 100%;
+}
+
+
+h2 {
+     line-height: 120%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+p {
+    padding-top: 5px;
+/*    font-size: 1vw;*/
+}
+
+/*-------------Menu CSS-------------*/
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+/* Desktop */
+#nav_desktop {
+  top: 0;
+  width: 100%;
+    padding: 20px 2%;
+    background-color: white;
+}
+
+#nav_desktop img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#nav_desktop ul {
+    list-style: none;
+}
+
+#nav_desktop li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 20px;
+/*    background-color: brown;*/
+/*    border-right: 1px solid blue;*/
+}
+
+a:link {
+  text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #638269 !important;
+}
+
+a:visited {
+  text-decoration: none;
+    color: black;
+}
+
+/* Mobile */
+/*
  * Made by Erik Terwan
  * 24th of November 2015
  * MIT License
@@ -36,14 +102,20 @@ body {
  * prefixes.
  */
 
+#nav_mobile 
+{
+    background-color: transparent;
+}
+
 #menuToggle
 {
   display: block;
   position: relative;
-  top: 10px;
+  top: 30px;
   left: 300px;
-    width: 5%;
-  
+/*    width: 35px;*/
+    
+    
   z-index: 1;
   
   -webkit-user-select: none;
@@ -148,107 +220,37 @@ body {
  */
 #menu
 {
-  position: absolute;
-  width: 220px;
-  margin: -100px 0 0 -350px;
-  padding: 100px;
-  padding-top: 90px;
-    height: 812px;
+    position: absolute;
+    width: 375px;
+    margin: -60px 0 0 -300px;
+    padding: 50px 100px;
+    height: 815px;
   
-  background: #F5FAFF;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
+    background: #F5FAFF;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menu li
 {
   display: block;
-  padding: 30px 0;
+  padding: 25px 0;
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
 #menuToggle input:checked ~ ul
 {
   transform: none;
 }
-/* End of mobile nav */
 
+/*-------------Home CSS-------------*/
 
-header {
-    background-color: aqua;
-}
-
-a:link {
-  text-decoration: none;
-    color: black;
-}
-
-a:hover{
-    color: #638269;
-}
-
-a:visited {
-  text-decoration: none;
-    color: black;
-}
-
-
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-    padding: 20px 2%;
-    background-color: white;
-}
-
-nav img {
-    width: 50px;
-    height: auto;
-    vertical-align: middle;
-    padding-right: 10px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0px 20px;
-/*    background-color: brown;*/
-/*    border-right: 1px solid blue;*/
-}
-
-h1 {
-    font-size: 3vw;
-    color: cadetblue;
-}
-
-h2 {
-     line-height: 120%;
-    padding-bottom: 7px;
-    border-bottom: 1px solid black;
-    width: 60%;
-}
-
-h4 {
-    padding-top: 10px;
-}
-
-p {
-    padding-top: 5px;
-/*    font-size: 1vw;*/
-}
 .home {
 /*    background-color: aliceblue;*/
     display: flex;
@@ -261,43 +263,43 @@ p {
 /*    padding-bottom: 6.3%;*/
 /*    padding-bottom: 135px;*/
     height: 1169px;
+    width: 100%;
+    font-size: 1.4vw;
+    color: cadetblue;
 }
 .home .left{
 /*    background-color: antiquewhite;*/
-    width: 40%;
-    padding: 0 3% 0 10%;
+    width: 50%;
+    padding: 0 0 0 10%;
     font-family: canto,serif;
-    font-weight: 400;
-    font-style: normal;
     text-align: right;
 }
 .home .left img{
-    width: 50%;
-    padding-right: 80%;
+    width: 100%;
+    padding-right: 50%;
 }
 
 
 .home .right{
     width: 40%;
-/*    background-color: black; */
-    padding: 0 5% 0 0;
+    padding: 0 0 0 3%;
     
 }
 
 .home .right img{
     width: 100%;
 }
+/*-------------About CSS--------------*/
 
 .about {
-/*    background-color: aquamarine;*/
-/*    padding: 10% 5%;*/
     background-image: url(../images/bg-04.png);
     background-repeat: no-repeat;
-/*    background-size: 100%;*/
-    height: 300px;
+    height: 520px;
     color: white;
     padding: 110px 5%; 
     display: flex;
+    width: 100%;
+    align-items: center;
 }
 
 .about h2 {
@@ -305,26 +307,27 @@ p {
 }
 
 .about .left {
-    width: 80%;
+    width: 60%;
 }
 
 .about .right{
-/*    background-color: antiquewhite;*/
-    width: 100%;
-    padding: 0 0% 400px 10%;
-    margin-top: -53px;
-    margin-right: -85px;
+    padding-left: 7%;
+    max-height: 120%;
     overflow: hidden;
 }
 
+.about p{
+    padding-bottom: 15px;
+}
+
+/*-------------Timeline CSS--------------*/
+
 .timeline {
-/*    background-color:deeppink;*/
-    padding: 70px 15% 0 840px;
+    padding: 90px 15% 0 840px;
     background-image: url(../images/bg-05.png);
-/*    background-size: cover;*/
     background-repeat: no-repeat;
-    height: 2535px;
-/*    width: 1000px;*/
+    height: 2606px;
+    width: 100%;
 }
 
 .timeline h2 {
@@ -335,7 +338,8 @@ p {
 .timeline h3{
     border-bottom: 1px solid black;
     padding-left: 300px;
-    width: 60%;
+    width: 100%;
+    font-size: 1em;
 }
 
 .timeline p{
@@ -346,63 +350,56 @@ p {
 }
 
 .timeline img {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-left: 300px;
+    width: 100%;
+}
+.fen {
+    width: 80%;
+    margin: auto;
 }
 
+/*-------------Features CSS--------------*/
+
 #features {
-/*    background-color: red;*/
     color: white;
-    padding: 10px 5% ;
+    padding: 90px 5% 120px 5%;
+    width: 100%;
     background-image: url(../images/bg-06.png);
     background-repeat: no-repeat;
-/*    background-size:cover;*/
-    height: 3000px;
+/*    height: 2900px;*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+
 #features h{
-    font-size: 5vw;
-    font-weight: bold;    
+    font-size: 2.5vw;
+    font-weight: bold;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 40px;
+    margin-top: -100px;
 }
 
 #features h2{
     border-color: white;
 /*    margin: 0 20px;*/
-    margin-top: 10%;
-    font-size: 3vw;
-    width: 700px;
-    margin-bottom: 3%;
+/*    margin-top: 10%;*/
+/*    font-size: 2vw;*/
+    width: 100%;
+/*    margin-bottom: 3%;*/
 }
 
-#features h4{
-    font-size: 1.7vw;
-}
-
-/*
-#features p{
-    margin: 0 20px;
-}
-*/
 
 #features li {
-    margin: 0 20px;
-}
-
-#features img {
-/*    margin: 50px;*/
+    margin: 5px 20px;
 }
 
 #features .item {
     width: 40%;
-}
-
-#features .phone {
-    width: 18%;
-    padding-left: 10%;
 }
 
 .side{
@@ -411,23 +408,37 @@ p {
     width: 65%;
 }
 
+.phone {
+    width: 35%;
+    padding-left: 20%;
+}
+
+/*-------------Stories CSS--------------*/
+
 .stories {
 /*    background-color: beige;*/
     background-image: url(../images/bg-03.png);
     background-repeat: no-repeat;
-     padding: 70px 5%;
+     padding: 90px 5%;
+    width: 100%;
 }
 
 .stories h2{
     width: 30%;
 }
+
+.stories img {
+    width: 30%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 .stories .bob{
-    padding-top: 50px;
+    padding-top: 30px;
     width: 45%;
 }
 
 .stories .bobette{
-    padding: 0 0 0 55%;
+    margin-left: 55%;
     width: 45%;
 }
 
@@ -439,25 +450,32 @@ p {
     align-items: center;
 }
 
+/*-------------Purchase CSS--------------*/
+
+.purchase {
+    padding: 90px 5% 80px 5%;
+    width: 100%;
+}
+
 #logos-desktop{
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-right: 5%;
     padding-top: 10px;
 }
 
 .purchase img {
-    width: 20%;
+    width: 35%;
     height: auto;
     align-self: center;
     padding: 0 50px;
 }
 
 .purchase .right {
-    width: 45%;
+    width: 55%;
     padding-left: 10%;
+    margin-top: -20px;
 }
 
 .purchase h2 {
@@ -465,14 +483,16 @@ p {
     width: 98%;
 }
 
+/*---------Locations CSS---------*/
 
 .locations {
 /*    background-color: blue;*/
     background-image: url(../images/bg_07.jpg);
     background-repeat: no-repeat;
-    padding: 70px 5%;
+    padding: 90px 5%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .locations .left{
@@ -489,11 +509,11 @@ p {
     width: 60%;
 }
 
-.locations input{
-    margin-bottom: 30px;
+input{
+    margin-bottom: 50px;
     margin-top: 20px;
     height: 10px;
-    padding: 10px;
+    padding: 15px;
     width: 47%;
     font-family: filson-pro, sans-serif;
     font-weight: 300;
@@ -509,9 +529,12 @@ p {
     margin-bottom: 5px;
 }
 
-.map{
-    display: none;
+/*h4 only in LOCATIONS*/
+h4 {
+    padding-top: 10px;
 }
+
+/*---------Contact CSS---------*/
 
 .contact-us {
 /*    background-color: purple;*/
@@ -521,6 +544,7 @@ p {
     display: flex;
     justify-content: space-between;
     color: white;
+    width: 100%;
 }
 
 .contact-us h2 {
@@ -540,11 +564,6 @@ p {
     justify-content: flex-end;
 }
 
-/*
-.contact-us img{
-    width: 20%;
-}
-*/
 
 .contact-us h5 {
     width: 100%;
@@ -555,7 +574,7 @@ p {
 /*    margin-left: -40px;*/
 /*    margin-right: 80px;*/
     padding: 5% 0 5% 5%;
-    width: 25%;
+    width: 29%;
     text-align: center;
 }
 
@@ -584,20 +603,26 @@ p {
     display: none;
 }
 
+/*---------Footer CSS---------*/
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-
-/* mobile screen*/
+/*---------mobile screen---------*/
 
 @media only screen and (max-width: 375px) 
     {
+/*
+        *{
+            box-sizing: border-box;
+        }
+*/
         body{
             max-width: 375px;
-            min-width: 375px;
+            min-width: 374px;
         }
         
         .mobile {
@@ -608,10 +633,6 @@ footer {
             display: none;
         }
         
-        nav {
-            display: none;
-            background-color: transparent;
-        }
 
         h1 {
             font-size: 4vw;
@@ -634,24 +655,28 @@ footer {
         /*    font-size: 1vw;*/
         }
         
+/*---------mobile home---------*/
         .home {
             display: block;
             background-size: 375px;
-            height: 670px;
+            padding: 30px 20px 70px 20px;
+            height: auto;
         }
         .home .left{
-            width: 93%;
-            padding: 30px 0 0 20px;
+            width: 100%;
+            padding: 0;
+            margin: 0;
             text-align: left;
         }
         .home .left img{
             padding-right: 0;
-            width: 50%;
+            width: 60%;
+            padding-top: 20px;
         } 
         
         .home .left h1 {
-            padding-left: 90px;
-            font-size: 2em;
+            padding-left: 65px;
+            font-size: 7em;
             line-height: 37px;
             margin-top: -20px;
         }
@@ -664,19 +689,20 @@ footer {
 
         .home .right img{
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: auto;
             padding-top: 13%;
             width: 80%;
         }
 
+/*---------mobile about---------*/
         .about {
+            display: block;
             background-image: none;
             background-color: #638269;
             color: white;
-            padding: 45px 20px; 
+            padding: 60px 30px; 
             font-size: 2em;
-            height: 900px;
+            height: auto;
         }
         
         .about h2 {
@@ -700,36 +726,40 @@ footer {
         .about .right{
             display: none;
         }
-
+        
+/*---------mobile timeline---------*/
         .timeline {
             background-image: url(../images/timeline_mobile_backgrounde-09.jpg);
-            padding: 45px 0px;
-            height: 1770px;
+            background-size: 375px;
+            padding: 60px 30px; 
+            height: 1880px;
         }
 
         .timeline h2 {
-            width: 55%;
+            width: 60%;
             margin-bottom: 30px;
-            margin-left: 40%;
+            margin-left: 35%;
         }
         
         .timeline h3{
             border-bottom: 1px solid black;
-            padding-left: 10%;
-            margin-left: 30%;
-            width: 50%;
+            padding-left: 15%;
+            margin-left: 20%;
+            width: 60%;
         }
 
         .timeline p{
-            padding-left: 40%;
+            padding-left: 35%;
             padding-bottom: 20px;
-            width: 55%;
+
             font-size: 1.2em;
         }
 
         .timeline img {
             display: none;
         }
+        
+/*---------mobile features---------*/
         #features {
             display: none;
         }
@@ -737,9 +767,8 @@ footer {
         #features_mobile{
             background-image: none;
             background-color: #638269;
-            height: 2950px;
-            padding: 45px 30px;
-            display: block;
+            height: auto;
+            padding: 50px 30px 40px 30px; 
             font-size: 1.2em;
             color: white;
         }
@@ -750,67 +779,70 @@ footer {
         }
         
         #features_mobile h2{
-            width: 90%;
+            width: 100%;
             border-color: white;
         }
         
         #features_mobile ul{
             padding-top: 10px;
-            padding-left: 15px;
-        }
-        
-        #features_mobile p{
-            padding-bottom: 20px;
+            padding-left: 20px;
         }
         
         #features_mobile img{
-            padding-bottom: 20px;
+            padding: 10px 30px 30px 30px;
+            width: 100%;
         }
         
-        #features_mobile .phone-mobile{
-            padding-left: 70px;
+        .phone-mobile{
+            padding: 10px 30px 0 30px;
         }
         
         .side{
             padding-right: 0px;
         }
-
+        
+/*---------mobile stories---------*/
         .stories {
-             padding: 45px 30px;
+             padding: 60px 30px; 
         }
 
         .stories h2{
             width: 100%;
         }
         
+        .stories img {
+            padding-bottom: 10px;
+            padding-left: 50%;
+            width: 100%;
+            margin-bottom: -40px;
+        }
+        
         .stories .bob{
-            padding-top: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             width: 100%;
         }
         
         .bob p{
-            padding-bottom: 50px;
+            padding-bottom: 10px;
         }
 
         .stories .bobette{
-            padding: 0 0 0 0px;
+/*            padding-left: 0;*/
+            margin: 0;
             width: 100%;
         }
 
+/*---------mobile purchase---------*/
         .purchase {
-            padding: 45px 30px;
+            padding: 60px 30px 50px 30px; 
             display: block;
-        }
-
-        .purchase img {
-            width: 100%;   
-            padding: 10px 20px;
         }
 
         .purchase .right {
             width: 100%;
-            padding-left: 0%;
-            padding-top: 2%;
+            padding-top: 20px;
+            padding-left: 0;
             display: block;
         }
         
@@ -819,61 +851,70 @@ footer {
         }
         
         #logos-mobile {
-              display: flex;
-              flex-wrap: wrap;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 30px;
         }
-
-        #logos-mobile img {
-              width: 30%;
+        
+        .purchase img {
+            width: 40%;   
+            padding: 10px 0px;
         }
- 
+        
+/*---------mobile locations---------*/
         .locations {
-            padding: 45px 30px;
-        }
-
-        .locations .left{
-            width: 17%;
-
+            padding: 60px 30px; 
+            width: 100%;
+            display: block;
+            margin: 0;
         }
 
         .locations .right{
             display: none;
         }
         
+        .locations .left {
+            width: 100%;
+        }
+        
         .locations .left h2{
-            width: 500%;
+            width: 100%;
         }
 
         .locations p{
             padding-bottom: 10px;
-            width: 550%;
+            width: 100%;
+        }
+        
+        input {
+            width: 100%;
         }
 
         .locations input{
-            margin-bottom: 15px;
             height: 5px;
             padding: 15px;
-            width: 400%;
+/*            width: 100%;*/
             border-radius: 2px;
         }
 
         .locations h3{
             border-bottom: 1px solid black;
-            width: 300%;
+            width: 100%;
             padding-bottom: 2px;
             margin-bottom: 2px;
         }
 
         .locations h4{
-            width: 400%;
+/*            width: 100%;*/
         }
         
+/*---------mobile contact---------*/
         .contact-us {
             background-image: none;
             background-color: #638269; 
-            padding: 45px 30px;
+            padding: 60px 30px; 
             display: block;
-            height: 750px;
         }
         
         .contact-us h2{
@@ -905,7 +946,7 @@ footer {
         }
         
         .contact-us .us img{
-            width: 200%;    
+            width: 200%;
         }
         
         .contact-us h5 {
@@ -916,21 +957,6 @@ footer {
         .contact-us p{
             padding-bottom: 5px;
         }
-
-/*
-        .contact-us .box{
-            margin-top: -25px;
-            margin-left: -90px;
-            margin-right: 40px;
-            width: 10%;
-        }
-*/
-
-/*
-        .box img {
-            width: 150%;
-        }
-*/
 
         .contact-us .icons{
             padding-top: 15px;
@@ -948,10 +974,10 @@ footer {
             margin-bottom: 7px;
             padding: 10px;
         }
-
+        
+        /*mobile footer*/
         footer {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 20px 0;
             text-align: center;
         }
   

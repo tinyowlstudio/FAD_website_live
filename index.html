@@ -6,13 +6,14 @@
   <title>fen</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/phv3qab.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/java.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    
 </head>
 <body>
-    <div class="container">
 <!-------------------------Header------------------------->
+    <div class="container">
         <header>
 <!-------------------------Nav------------------------->
             <nav class="desktop" id="nav_desktop">
@@ -27,33 +28,19 @@
                     <li><a href="#contact-us">contact us</a></li>
                 </ul>
             </nav>
-        </header>
 <!----------------------------Mobile-Nav------------------------------>
         <!--    Made by Erik Terwan    https://codepen.io/erikterwan/pen/EVzeRP -->
 <!--   24th of November 2015   -->
 <!--        MIT License        -->
             <nav class ="mobile" id="nav_mobile" role="navigation">
               <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
+
                 <input id="checkbox" type="checkbox"/>
 
-                <!--
-                Some spans to act as a hamburger.
-
-                They are acting like a real hamburger,
-                not that McDonalds stuff.
-                -->
                 <span></span>
                 <span></span>
                 <span></span>
 
-                <!--
-                Too bad the menu has to be inside of the button
-                but hey, it's pure CSS magic.
-                -->
                 <ul id="menu">
                   <li class="nav_mobile" onclick="hideMenu();"><a href="#home">home</a></li>
                   <li class="nav_mobile" onclick="hideMenu();"><a href="#about">about</a></li>
@@ -63,10 +50,10 @@
                     <li class="nav_mobile" onclick="hideMenu();"><a href="#purchase">purchase</a></li>
                     <li class="nav_mobile" onclick="hideMenu();"><a href="#locations">locations</a></li>
                     <li class="nav_mobile" onclick="hideMenu();"><a href="#contact-us">contact us</a></li>
-<!--                  <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>-->
                 </ul>
               </div>
             </nav>
+      </header>
 <!-------------------------Main------------------------->
             <div class="home" id="home">
                     <div class ="left">
@@ -95,7 +82,7 @@
                                 Create bonds with your neighbors through the shared
                                 experience of fen.</p>
                 </div>
-                <div class="right"><img src="images/about-0.jpg" width="90%"></div>
+                <div class="right"><img src="images/about-1.jpg" width="100%"></div>
             </div>
 <!-------------------------Timeline------------------------->
                 <div class="timeline" id="timeline">
@@ -103,44 +90,44 @@
                     <h3>1627</h3>
                         <p>Hydroponics are first researched in Francis Bacon’s
                             book Sylva Sylarum, or ‘A Natural History’</p>
-                            <img src="images/timeline1.jpg" width="60%">
+                            <img src="images/timeline1.jpg">
                     <h3>1913</h3>
                         <p>The Haber process, also called the Haber-Bosch process,
                             made it possible to produce ammonia, and
                             thereby fertilize, on an industrrial scale</p>
-                            <img src="images/timeline2.jpg" width="60%">
+                            <img src="images/timeline2.jpg">
                     <h3>1947</h3>
                         <p>Hungarian scientist Dennis Gabor first came up with
                             the concept of a hologram while trying to improve
                             the resolution of electron microscopes. The word
                             comes from “holos,” the Greek word for “whole,”
                             and “gramma,” which is the term for message.</p>
-                            <img src="images/timeline3.jpg" width="60%">
+                            <img src="images/timeline3.jpg">
                     <h3>1990s</h3>
                         <p>Major advances in all areas of AI, with significant
                             demonstrations in machine learning, case-based reasoning,
                             multi-agent planning, scheduling, uncertain reasoning, 
                             natural language understanding and translation, and other 
                             topics.</p>
-                            <img src="images/timeline4.jpg" width="60%">
+                            <img src="images/timeline4.jpg">
                     <h3>2005</h3>
                         <p>Lasers used to replace stickers by writing on food to “track 
                             and trace” and identify individual pieces of fresh fruit.</p>
-                            <img src="images/timeline5.jpg" width="60%">
+                            <img src="images/timeline5.jpg">
                     <h3>2012</h3>
                         <p>The first holographic display is implemented in car’s 
                             interactive navigation display system.</p>
-                            <img src="images/timeline6.jpg" width="60%">
+                            <img src="images/timeline6.jpg">
                     <h3>2029</h3>
                         <p>fen is created.</p>
-                            <img src="images/fen.png" width="40%">
+                    <div class="fen"><img src="images/fen.png"></div>
                     </div>
 <!-------------------------Features------------------------>
+        <!----------------Desktop---------------->
         <div class="desktop" id="features">
             <div class="item">
-                <h>features</h>
+                <h>Features</h>
                 <h2>So what can fen actually do?</h2>
-<!--                    <h4>Here's what fen can do for you!</h4>-->
                         <ul>
                             <li>Plant seeds</li>
                         <li>Water and maintain your crops</li>
@@ -161,7 +148,7 @@
                     <img src="images/ai.png" width="100%">
             </div>
             <div class="item">
-                <h4>Cutting edge AI automation</h4>
+                <h2>Cutting edge AI automation</h2>
                     <p>fen’s built in AI technology will take care of your
                         crops all while showing how they’re doing! You can
                         even go into more detail of each plant and learn
@@ -172,7 +159,7 @@
                         along the surface of your fen.</p>
             </div>
             <div class="item">
-                <h4>What can you grow with fen?</h4>
+                <h2>What can you grow with fen?</h2>
                     <p>fen accommodates for a large variety of fruits and vegetables!
                         Each fen is customizable to be able to plant both small and
                         large size crops. You can even get a special fen that can house
@@ -185,7 +172,7 @@
                     <img src="images/phone.png" width="100%">
             </div>
             <div class="item">
-                <h4>Not nearby? You can check out the fen on your phone!</h4>
+                <h2>Not nearby? You can check out the fen on your phone!</h2>
                     <p>Need to know how your crops while youre away on a vacation?
                         Or pick up some fruits and veggies on your way home from work?
                         No worries! You can check on the status of your crops using the fen
@@ -194,10 +181,10 @@
                         before you get there.</p>
             </div>
         </div>
+        <!-----------------Mobile---------------->
         <div class="mobile" id="features_mobile">
                 <h>features</h>
                 <h2>So what can fen actually do?</h2>
-<!--                    <h4>Here's what fen can do for you!</h4>-->
                         <ul>
                             <li>Plant seeds</li>
                         <li>Water and maintain your crops</li>
@@ -210,8 +197,8 @@
                     <li>Grow a large variety of crops of any size</li>
                         </ul>
                     <p>...all while remaining fresh and organic!</p>
-                    <img src="images/fen-plants.png" width="100%">
-                        <h4>Cutting edge AI automation</h4>
+                    <img src="images/fen-plants.png">
+                        <h2>Cutting edge AI automation</h2>
                             <p>fen’s built in AI technology will take care of your
                                 crops all while showing how they’re doing! You can
                                 even go into more detail of each plant and learn
@@ -221,10 +208,10 @@
                                 projection screen that will show you information
                                 along the surface of your fen.</p>
                     <img src="images/ai.png" width="100%">
-                        <h4>What can you grow with fen?</h4>
+                        <h2>What can you grow with fen?</h2>
                         <p>fen accommodates for a large variety of fruits and vegetables! Each fen is customizable to be able to plant both small and large size crops. You can even get a special fen that can house large fruit trees!</p>
-            <img src="images/fen-plants.png" width="100%">  
-                                    <h4>Not nearby? You can check out the fen on your phone!</h4>
+            <img src="images/fen-plants.png">  
+                                    <h2>Not nearby? You can check out the fen on your phone!</h2>
                                 <p>Need to know how your crops while youre away on a vacation?
                                     Or pick up some fruits and veggies on your way home from work?
                                     No worries! You can check on the status of your crops using the fen
@@ -239,7 +226,7 @@
         <div class="stories" id="stories">
             <h2>Check out who's been helped by fen!</h2>
             <div class="bob">
-                    <img src="images/Bob2.png" width="30%">
+                    <img src="images/Bob2.png">
                     <h4>Bob</h4>
                         <h5>Construction Worker</h5>
                             <p>Bob is a construction worker who can’t afford fresh and healthy food because of his
@@ -254,7 +241,7 @@
                                 produce using the phone app.</p>
                 </div>
                 <div class="bobette">
-                    <img src="images/Bobette2.png" width="30%">
+                    <img src="images/Bobette2.png">
                      <h4>Bobbert</h4>
                         <h5>College Student</h5>
                             <p>Bobbert is a college student currently studying at San José State University.
@@ -310,7 +297,6 @@
                 </div>
                 <div class="right"><img src="images/map-marker.jpg" width="70%"></div>
             </div>
-         <div class="map"><img src="images/map-marker.jpg" width="70%"></div>
 <!-------------------------Contact------------------------->
         <div class="contact-us" id="contact-us">
             <div class="left">
