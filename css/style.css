@@ -367,7 +367,7 @@ a:visited {
     width: 100%;
     background-image: url(../images/bg-06.png);
     background-repeat: no-repeat;
-/*    height: 2900px;*/
+    height: 3100px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
