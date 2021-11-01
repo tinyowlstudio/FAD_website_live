@@ -311,7 +311,7 @@ a:visited {
 /*-------------Timeline CSS--------------*/
 
 #timeline {
-    padding: 90px 15% 0 840px;
+    padding: 90px 14% 0 840px;
     background-image: url(../images/bg_timeline.jpg);
     background-repeat: no-repeat;
     height: 2606px;
@@ -343,7 +343,7 @@ a:visited {
     width: 100%;
 }
 .fen {
-    width: 80%;
+    width: 580px;
     margin: auto;
 }
 
