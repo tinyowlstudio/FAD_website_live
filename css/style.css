@@ -25,7 +25,7 @@ html {
     width: 100%;
 }
 
-.header{
+header{
     width: 100%;
 }
 
@@ -244,11 +244,11 @@ a:visited {
 
 /*-------------Home CSS-------------*/
 
-.home {
+#home {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    background-image: url(../images/bg-01.png);
+    background-image: url(../images/bg_home.png);
     background-repeat: no-repeat;
     background-size: 1920px;
     height: 1169px;
@@ -256,31 +256,31 @@ a:visited {
     font-size: 1.4vw;
     color: cadetblue;
 }
-.home .left{
+#home .left{
     width: 50%;
     padding: 0 0 0 10%;
     font-family: canto,serif;
     text-align: right;
 }
-.home .left img{
+#home .left img{
     width: 100%;
     padding-right: 50%;
 }
 
 
-.home .right{
+#home .right{
     width: 40%;
     padding: 0 0 0 3%;
     
 }
 
-.home .right img{
+#home .right img{
     width: 100%;
 }
 /*-------------About CSS--------------*/
 
-.about {
-    background-image: url(../images/bg-04.png);
+#about {
+    background-image: url(../images/bg_about.png);
     background-repeat: no-repeat;
     height: 520px;
     color: white;
@@ -290,54 +290,54 @@ a:visited {
     align-items: center;
 }
 
-.about h2 {
+#about h2 {
     border-color: white;
 }
 
-.about .left {
+#about p{
+    padding-bottom: 15px;
+}
+
+#about .left {
     width: 60%;
 }
 
-.about .right{
+#about .right{
     padding-left: 7%;
     max-height: 120%;
     overflow: hidden;
 }
 
-.about p{
-    padding-bottom: 15px;
-}
-
 /*-------------Timeline CSS--------------*/
 
-.timeline {
+#timeline {
     padding: 90px 15% 0 840px;
-    background-image: url(../images/bg-05.png);
+    background-image: url(../images/bg_timeline.jpg);
     background-repeat: no-repeat;
     height: 2606px;
     width: 100%;
 }
 
-.timeline h2 {
-    width: 60%;
+#timeline h2 {
+    width: 100%;
     margin-bottom: 15px;
-    margin-left: 300px;
+    padding-left: 300px;
 }
-.timeline h3{
+#timeline h3{
     border-bottom: 1px solid black;
     padding-left: 300px;
     width: 100%;
     font-size: 1em;
 }
 
-.timeline p{
+#timeline p{
     padding-left: 300px;
     color: #B4BBE0;
     padding-bottom: 20px;
 
 }
 
-.timeline img {
+#timeline img {
     padding-bottom: 40px;
     padding-left: 300px;
     width: 100%;
@@ -353,7 +353,7 @@ a:visited {
     color: white;
     padding: 90px 5% 120px 5%;
     width: 100%;
-    background-image: url(../images/bg-06.png);
+    background-image: url(../images/bg_features.jpg);
     background-repeat: no-repeat;
     height: 3100px;
     display: flex;
@@ -399,46 +399,47 @@ a:visited {
 
 /*-------------Stories CSS--------------*/
 
-.stories {
+#stories {
 /*    background-color: beige;*/
-    background-image: url(../images/bg-03.png);
+    background-image: url(../images/bg_stories.png);
     background-repeat: no-repeat;
      padding: 90px 5%;
     width: 100%;
 }
 
-.stories h2{
+#stories h2{
     width: 30%;
 }
 
-.stories img {
+#stories img {
     width: 30%;
     padding-left: 20px;
     padding-bottom: 20px;
 }
-.stories .bob{
+#stories .bob{
     padding-top: 30px;
     width: 45%;
 }
 
-.stories .bobette{
+#stories .bobette{
     margin-left: 55%;
     width: 45%;
 }
 
-.purchase {
+/*-------------Purchase CSS--------------*/
+
+#purchase {
     background-color: #638269;
-     padding: 30px 5%;
     color: white;
     display: flex;
     align-items: center;
-}
-
-/*-------------Purchase CSS--------------*/
-
-.purchase {
     padding: 90px 5% 80px 5%;
     width: 100%;
+}
+
+#purchase h2 {
+    border-color: white;
+    width: 98%;
 }
 
 #logos-desktop{
@@ -449,29 +450,24 @@ a:visited {
     padding-top: 10px;
 }
 
-.purchase img {
+#purchase img {
     width: 35%;
     height: auto;
     align-self: center;
     padding: 0 50px;
 }
 
-.purchase .right {
+#purchase .right {
     width: 55%;
     padding-left: 10%;
     margin-top: -20px;
 }
 
-.purchase h2 {
-    border-color: white;
-    width: 98%;
-}
 
 /*---------Locations CSS---------*/
 
-.locations {
-/*    background-color: blue;*/
-    background-image: url(../images/bg_07.jpg);
+#locations {
+    background-image: url(../images/bg_locations.jpg);
     background-repeat: no-repeat;
     padding: 90px 5%;
     display: flex;
@@ -479,19 +475,32 @@ a:visited {
     width: 100%;
 }
 
-.locations .left{
+#locations h3{
+    border-bottom: 1px solid black;
+    width: 50%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+/*h4 only in LOCATIONS*/
+h4 {
+    padding-top: 10px;
+}
+
+#locations p{
+    padding-bottom: 5px;
+    width: 60%;
+}
+
+#locations .left{
     width: 45%;
 }
 
-.locations .right{
+#locations .right{
     text-align: right;
     width: 50%;
 }
 
-.locations p{
-    padding-bottom: 5px;
-    width: 60%;
-}
 
 input{
     margin-bottom: 50px;
@@ -506,23 +515,11 @@ input{
     border: 1px solid black;
 }
 
-.locations h3{
-    border-bottom: 1px solid black;
-    width: 50%;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-
-/*h4 only in LOCATIONS*/
-h4 {
-    padding-top: 10px;
-}
 
 /*---------Contact CSS---------*/
 
-.contact-us {
-/*    background-color: purple;*/
-    background-image: url(../images/bg-02.png);
+#contact-us {
+    background-image: url(../images/bg_contact.png);
     background-repeat: no-repeat;
     padding: 70px 5%;
     display: flex;
@@ -531,15 +528,20 @@ h4 {
     width: 100%;
 }
 
-.contact-us h2 {
+#contact-us h2 {
     border-color: white;
 }
     
-.contact-us .left{
+#contact-us .left{
     width: 48%;
 }
 
-.contact-us .right{
+#contact-us .icons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contact-us .right{
     text-align: right;
     width: 40%;
     padding-right: 5px;
@@ -548,12 +550,11 @@ h4 {
     justify-content: flex-end;
 }
 
-
-.contact-us h5 {
+#contact-us h5 {
     width: 100%;
 }
 
-.contact-us .box{
+#contact-us .box{
     padding: 5% 0 5% 5%;
     width: 29%;
     text-align: center;
@@ -563,10 +564,6 @@ h4 {
     width: 100%;
 }
 
-.contact-us .icons{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 .button
 {
@@ -596,9 +593,10 @@ footer {
 
 @media only screen and (max-width: 375px) 
     {
+/*---------mobile overview---------*/
         body{
             max-width: 375px;
-            min-width: 374px;
+            min-width: 375px;
         }
         
         .mobile {
@@ -628,42 +626,43 @@ footer {
         p {
             padding-top: 6px;
             padding-bottom: 10px;
-        /*    font-size: 1vw;*/
         }
         
 /*---------mobile home---------*/
-        .home {
+        #home {
             display: block;
             background-size: 375px;
             padding: 30px 20px 70px 20px;
             height: auto;
         }
-        .home .left{
+        
+        #home .left{
             width: 100%;
             padding: 0;
             margin: 0;
             text-align: left;
         }
-        .home .left img{
-            padding-right: 0;
-            width: 60%;
-            padding-top: 20px;
-        } 
         
-        .home .left h1 {
+        #home .left h1 {
             padding-left: 65px;
             font-size: 7em;
             line-height: 37px;
             margin-top: -20px;
         }
+        
+        #home .left img{
+            padding-right: 0;
+            width: 60%;
+            padding-top: 20px;
+        } 
 
-        .home .right{
+        #home .right{
             padding: 0;
             width: 100%;
             display: block;
         }
 
-        .home .right img{
+        #home .right img{
             display: block;
             margin: auto;
             padding-top: 13%;
@@ -671,7 +670,7 @@ footer {
         }
 
 /*---------mobile about---------*/
-        .about {
+        #about {
             display: block;
             background-image: none;
             background-color: #638269;
@@ -681,57 +680,57 @@ footer {
             height: auto;
         }
         
-        .about h2 {
+        #about h2 {
             width: 100%;
         }
         
-        .about h4 {
+        #about h4 {
             font-size: 0.8em;
             padding: 10px 0;
         }
         
-        .about p {
+        #about p {
             font-size: 0.65em;
             padding-bottom: 10px;
         }
         
-        .about .left {
+        #about .left {
             width: 100%;
         }
 
-        .about .right{
+        #about .right{
             display: none;
         }
         
 /*---------mobile timeline---------*/
-        .timeline {
-            background-image: url(../images/timeline_mobile_backgrounde-09.jpg);
+        #timeline {
+            background-image: url(../images/bg_timeline_mobile.jpg);
             background-size: 375px;
             padding: 60px 30px; 
             height: 1880px;
         }
 
-        .timeline h2 {
-            width: 60%;
-            margin-bottom: 30px;
-            margin-left: 35%;
+        #timeline h2 {
+            width: 80%;
+            padding-left: 15%;
+            margin-left: 20%;
         }
         
-        .timeline h3{
+        #timeline h3{
             border-bottom: 1px solid black;
             padding-left: 15%;
             margin-left: 20%;
-            width: 60%;
+            width: 80%;
         }
 
-        .timeline p{
+        #timeline p{
             padding-left: 35%;
             padding-bottom: 20px;
 
             font-size: 1.2em;
         }
 
-        .timeline img {
+        #timeline img {
             display: none;
         }
         
@@ -773,48 +772,40 @@ footer {
             padding: 10px 30px 0 30px;
         }
         
-        .side{
-            padding-right: 0px;
-        }
-        
 /*---------mobile stories---------*/
-        .stories {
+        #stories {
              padding: 60px 30px; 
         }
 
-        .stories h2{
+        #stories h2{
             width: 100%;
         }
         
-        .stories img {
+        #stories img {
             padding-bottom: 10px;
             padding-left: 50%;
             width: 100%;
             margin-bottom: -40px;
         }
         
-        .stories .bob{
+        #stories .bob{
             padding-top: 10px;
             padding-bottom: 10px;
             width: 100%;
         }
-        
-        .bob p{
-            padding-bottom: 10px;
-        }
 
-        .stories .bobette{
+        #stories .bobette{
             margin: 0;
             width: 100%;
         }
 
 /*---------mobile purchase---------*/
-        .purchase {
+        #purchase {
             padding: 60px 30px 50px 30px; 
             display: block;
         }
 
-        .purchase .right {
+        #purchase .right {
             width: 100%;
             padding-top: 20px;
             padding-left: 0;
@@ -832,106 +823,102 @@ footer {
             padding-top: 30px;
         }
         
-        .purchase img {
+        #purchase img {
             width: 40%;   
             padding: 10px 0px;
         }
         
 /*---------mobile locations---------*/
-        .locations {
+        #locations {
             padding: 60px 30px; 
             width: 100%;
             display: block;
             margin: 0;
         }
-
-        .locations .right{
-            display: none;
-        }
         
-        .locations .left {
-            width: 100%;
-        }
-        
-        .locations .left h2{
-            width: 100%;
-        }
-
-        .locations p{
+        #locations p{
             padding-bottom: 10px;
             width: 100%;
         }
         
-        input {
-            width: 100%;
-        }
-
-        .locations input{
-            height: 5px;
-            padding: 15px;
-            border-radius: 2px;
-        }
-
-        .locations h3{
+        #locations h3{
             border-bottom: 1px solid black;
             width: 100%;
             padding-bottom: 2px;
             margin-bottom: 2px;
         }
+
+        #locations .right{
+            display: none;
+        }
+        
+        #locations .left {
+            width: 100%;
+        }
+        
+        #locations .left h2{
+            width: 100%;
+        }
+        
+        input {
+            width: 100%;
+            height: 5px;
+            padding: 15px;
+        }
         
 /*---------mobile contact---------*/
-        .contact-us {
+        #contact-us {
             background-image: none;
             background-color: #638269; 
             padding: 60px 30px; 
             display: block;
         }
         
-        .contact-us h2{
+        #contact-us h2{
             width: 99%
         }
-
-        .contact-us img{
-            width: 100%;
-            padding-top: 20px;
-        }
-
-        .contact-us .left{
-            width: 100%;
-        }
-
-        .contact-us .right{
-            padding-left: 5%;
-            width: 30%;
-            display: none;
-        }
-        .contact-us .us{
-            width: 20%;
-            display: block;
-        }
         
-        .contact-us .us h5{
-            width: 500%;
-            padding-top: 5px;
-        }
-        
-        .contact-us .us img{
-            width: 200%;
-        }
-        
-        .contact-us h5 {
+        #contact-us h5 {
             width: 50;
             padding-bottom: 5%;
         }
         
-        .contact-us p{
+        #contact-us p{
             padding-bottom: 5px;
         }
 
-        .contact-us .icons{
+        #contact-us img{
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        #contact-us .left{
+            width: 100%;
+        }
+
+        #contact-us .right{
+            padding-left: 5%;
+            width: 30%;
+            display: none;
+        }
+        #contact-us .us{
+            width: 20%;
+            display: block;
+        }
+        
+        #contact-us .us h5{
+            width: 500%;
+            padding-top: 5px;
+        }
+        
+        #contact-us .icons{
             padding-top: 15px;
             padding-bottom: 20px;
             font-size: 2em;
+        }
+        
+        #contact-us img{
+            width: 200%;
         }
 
         .button
