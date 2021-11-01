@@ -40,7 +40,6 @@ h2 {
 
 p {
     padding-top: 5px;
-/*    font-size: 1vw;*/
 }
 
 /*-------------Menu CSS-------------*/
@@ -72,8 +71,6 @@ nav {
     display: inline-block;
     vertical-align: middle;
     padding: 0px 20px;
-/*    background-color: brown;*/
-/*    border-right: 1px solid blue;*/
 }
 
 a:link {
@@ -96,10 +93,8 @@ a:visited {
  * 24th of November 2015
  * MIT License
  *
+ * Code modified for this website
  *
- * If you are thinking of using this in
- * production code, beware of the browser
- * prefixes.
  */
 
 #nav_mobile 
@@ -112,9 +107,7 @@ a:visited {
   display: block;
   position: relative;
   top: 30px;
-  left: 300px;
-/*    width: 35px;*/
-    
+  left: 300px; 
     
   z-index: 1;
   
@@ -252,23 +245,18 @@ a:visited {
 /*-------------Home CSS-------------*/
 
 .home {
-/*    background-color: aliceblue;*/
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     background-image: url(../images/bg-01.png);
     background-repeat: no-repeat;
     background-size: 1920px;
-/*    padding-top: 200px;*/
-/*    padding-bottom: 6.3%;*/
-/*    padding-bottom: 135px;*/
     height: 1169px;
     width: 100%;
     font-size: 1.4vw;
     color: cadetblue;
 }
 .home .left{
-/*    background-color: antiquewhite;*/
     width: 50%;
     padding: 0 0 0 10%;
     font-family: canto,serif;
@@ -386,11 +374,7 @@ a:visited {
 
 #features h2{
     border-color: white;
-/*    margin: 0 20px;*/
-/*    margin-top: 10%;*/
-/*    font-size: 2vw;*/
     width: 100%;
-/*    margin-bottom: 3%;*/
 }
 
 
@@ -409,7 +393,7 @@ a:visited {
 }
 
 .phone {
-    width: 35%;
+    width: 40%;
     padding-left: 20%;
 }
 
@@ -570,9 +554,6 @@ h4 {
 }
 
 .contact-us .box{
-/*    margin-top: -50px;*/
-/*    margin-left: -40px;*/
-/*    margin-right: 80px;*/
     padding: 5% 0 5% 5%;
     width: 29%;
     text-align: center;
@@ -615,11 +596,6 @@ footer {
 
 @media only screen and (max-width: 375px) 
     {
-/*
-        *{
-            box-sizing: border-box;
-        }
-*/
         body{
             max-width: 375px;
             min-width: 374px;
@@ -828,7 +804,6 @@ footer {
         }
 
         .stories .bobette{
-/*            padding-left: 0;*/
             margin: 0;
             width: 100%;
         }
@@ -894,7 +869,6 @@ footer {
         .locations input{
             height: 5px;
             padding: 15px;
-/*            width: 100%;*/
             border-radius: 2px;
         }
 
@@ -903,10 +877,6 @@ footer {
             width: 100%;
             padding-bottom: 2px;
             margin-bottom: 2px;
-        }
-
-        .locations h4{
-/*            width: 100%;*/
         }
         
 /*---------mobile contact---------*/
@@ -975,7 +945,7 @@ footer {
             padding: 10px;
         }
         
-        /*mobile footer*/
+/*---------footer---------*/
         footer {
             padding: 20px 0;
             text-align: center;
