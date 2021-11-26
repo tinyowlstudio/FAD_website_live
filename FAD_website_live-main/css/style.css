@@ -1,0 +1,1004 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {   
+    font-family: filson-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 1920px;
+    min-width: 1700px;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mobile{
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+header{
+    width: 100%;
+}
+
+
+h2 {
+     line-height: 120%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+p {
+    padding-top: 5px;
+}
+
+/*-------------Menu CSS-------------*/
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+/* Desktop */
+#nav_desktop {
+  top: 0;
+  width: 100%;
+    padding: 20px 2%;
+    background-color: white;
+}
+
+#nav_desktop img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+#nav_desktop ul {
+    list-style: none;
+}
+
+#nav_desktop li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 20px;
+}
+
+a:link {
+  text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #638269 !important;
+}
+
+a:visited {
+  text-decoration: none;
+    color: black;
+}
+
+/* Mobile */
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ * Code modified for this website
+ *
+ */
+
+#nav_mobile 
+{
+    background-color: transparent;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 300px; 
+    
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen 
+ */
+#menu
+{
+    position: absolute;
+    width: 375px;
+    margin: -60px 0 0 -300px;
+    padding: 50px 100px;
+    height: 815px;
+  
+    background: #F5FAFF;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  display: block;
+  padding: 25px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/*-------------Home CSS-------------*/
+
+#home {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: url(../images/bg_home.png);
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    height: 1169px;
+    width: 100%;
+    font-size: 1.4vw;
+    color: cadetblue;
+}
+#home .left{
+    width: 50%;
+    padding: 0 0 0 10%;
+    font-family: canto,serif;
+    text-align: right;
+}
+#home .left img{
+    width: 100%;
+    padding-right: 50%;
+}
+
+
+#home .right{
+    width: 40%;
+    padding: 0 0 0 3%;
+    
+}
+
+#home .right img{
+    width: 100%;
+}
+/*-------------About CSS--------------*/
+
+#about {
+    background-image: url(../images/plant_1_black_gradient.jpg);
+    background-color: #638269;
+    background-repeat: no-repeat;
+    background-size: 100%;
+/*    height: 520px;*/
+    color: white;
+    padding: 30px 5%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#about h2 {
+    border: none;
+    font-size: 2.5vw;
+    width: 100%;
+    padding: 245px 0 280px 0;
+}
+
+#about p{
+    padding-bottom: 15px;
+}
+
+#about .item{
+    width: 48%;
+    padding: 80px 0;
+}
+
+#about .top{
+    padding-bottom: 50px;
+}
+
+/*
+#about .left {
+    width: 60%;
+}
+
+#about .right{
+    padding-left: 7%;
+    max-height: 120%;
+    overflow: hidden;
+}
+*/
+
+/*-------------Timeline CSS--------------*/
+
+#timeline {
+    padding: 90px 20% 0 1000px;
+    background-image: url(../images/bg_timeline.jpg);
+    background-repeat: no-repeat;
+    height: 2606px;
+    width: 100%;
+}
+
+#timeline h2 {
+    width: 100%;
+    margin-bottom: 15px;
+/*    padding-left: 300px;*/
+}
+#timeline h3{
+    border-bottom: 1px solid black;
+/*    padding-left: 300px;*/
+    width: 100%;
+    font-size: 1em;
+}
+
+#timeline p{
+/*    padding-left: 300px;*/
+    color: #B4BBE0;
+    padding-bottom: 20px;
+
+}
+
+#timeline img {
+    padding-bottom: 40px;
+/*    padding-left: 300px;*/
+    width: 100%;
+}
+.fen {
+    width: 200px;
+    margin: auto;
+}
+
+/*-------------Features CSS--------------*/
+
+#features {
+    color: white;
+    padding: 90px 5% 120px 5%;
+    width: 100%;
+    background-image: url(../images/bg_features.jpg);
+    background-repeat: no-repeat;
+    height: 3100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#features h{
+    font-size: 2.5vw;
+    font-weight: bold;
+    display: block;
+    padding-top: 0;
+    padding-bottom: 40px;
+    margin-top: -100px;
+}
+
+#features h2{
+    border-color: white;
+    width: 100%;
+}
+
+
+#features li {
+    margin: 5px 20px;
+}
+
+#features .item {
+    width: 40%;
+}
+
+.side{
+    padding: 0;
+    margin-right: -5.5%;
+    width: 65%;
+}
+
+.phone {
+    width: 40%;
+    padding-left: 20%;
+}
+
+/*-------------Stories CSS--------------*/
+
+#stories {
+/*    background-color: beige;*/
+    background-image: url(../images/bg_stories.png);
+    background-repeat: no-repeat;
+     padding: 90px 5%;
+    width: 100%;
+}
+
+#stories h2{
+    width: 30%;
+}
+
+#stories img {
+    width: 30%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#stories .bob{
+    padding-top: 30px;
+    width: 45%;
+}
+
+#stories .bobette{
+    margin-left: 55%;
+    width: 45%;
+}
+/*-------------Background for last sections CSS--------------*/
+.background {
+    background-image: url(../images/last_bg-01.jpg);
+}
+/*-------------Purchase CSS--------------*/
+
+#purchase {
+/*    background-color: #638269;*/
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 90px 5% 80px 5%;
+    width: 100%;
+}
+
+#purchase h2 {
+    border-color: white;
+    width: 98%;
+}
+
+#logos-desktop{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+#purchase img {
+    width: 35%;
+    height: auto;
+    align-self: center;
+    padding: 0 50px;
+}
+
+#purchase .right {
+    width: 55%;
+    padding-left: 10%;
+    margin-top: -20px;
+}
+
+
+/*---------Locations CSS---------*/
+
+#locations {
+/*    background-image: url(../images/last_bg-01.jpg);*/
+    background-repeat: no-repeat;
+    padding: 90px 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    border-color: white;
+}
+
+#locations h2 {
+    border-color: white;
+}
+
+#locations h3{
+    border-bottom: 1px solid white;
+    width: 50%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+/*h4 only in LOCATIONS*/
+h4 {
+    padding-top: 10px;
+}
+
+#locations p{
+    padding-bottom: 5px;
+    width: 60%;
+}
+
+#locations .left{
+    width: 45%;
+}
+
+#locations .right{
+    text-align: right;
+    width: 50%;
+    margin-top: auto;
+/*    margin-bottom: auto;*/
+}
+
+
+input{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    height: 10px;
+    padding: 15px;
+    width: 47%;
+    font-family: filson-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+/*---------Contact CSS---------*/
+
+#contact-us {
+/*    background-image: url(../images/bg_contact.png);*/
+    background-repeat: no-repeat;
+    padding: 70px 5%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+#contact-us h2 {
+    border-color: white;
+}
+    
+#contact-us .left{
+    width: 48%;
+}
+
+#contact-us .icons{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contact-us i {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+#contact-us .right{
+    text-align: right;
+    width: 40%;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#contact-us h5 {
+    width: 100%;
+}
+
+#contact-us .box{
+    padding: 5% 0 5% 5%;
+    width: 29%;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+}
+
+
+.button
+{
+    background-color: white;
+    color: #638269;
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+    
+.us{
+    display: none;
+}
+
+/*---------Footer CSS---------*/
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*---------mobile screen---------*/
+
+@media only screen and (max-width: 375px) 
+    {
+/*---------mobile overview---------*/
+        body{
+            max-width: 375px;
+            min-width: 375px;
+        }
+        
+        .mobile {
+            display: block;
+        }
+        
+        .desktop {
+            display: none;
+        }
+        
+
+        h1 {
+            font-size: 4vw;
+            color: cadetblue;
+        }
+
+        h2 {
+             line-height: 105%;
+            padding-bottom: 8px;
+            border-bottom: 1px solid black;
+        }
+
+        h4 {
+            padding-top: 5px;
+        }
+
+        p {
+            padding-top: 6px;
+            padding-bottom: 10px;
+        }
+        
+/*---------mobile home---------*/
+        #home {
+            display: block;
+            background-size: 375px;
+            padding: 70px 20px 70px 20px;
+            height: 812px;
+        }
+        
+        #home .left{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        
+        #home .left img{
+            padding-right: 0;
+            width: 95%;
+            padding-top: 20px;
+        } 
+        
+        #home .left h1 {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 7em;
+            line-height: 37px;
+            margin-top: 0px;
+            text-align: right;
+        }
+        
+
+        #home .right{
+            padding: 0;
+            width: 100%;
+            display: block;
+        }
+
+        #home .right img{
+            display: block;
+            margin: auto;
+            padding-top: 15%;
+            width: 80%;
+        }
+
+/*---------mobile about---------*/
+        #about {
+            display: block;
+            background-image: none;
+            background-color: #638269;
+            color: white;
+            padding: 60px 30px; 
+            font-size: 2em;
+            height: auto;
+        }
+        
+        #about .top{
+            padding: 0;
+        }
+        
+        #about h2 {
+            font-size: 1.5em;
+            width: 100%;
+            padding: 0 0 30px 0;
+        }
+        
+        #about h4 {
+            font-size: 0.8em;
+            padding: 10px 0;
+        }
+        
+        #about p {
+            font-size: 0.65em;
+            padding-bottom: 20px;
+        }
+        
+        #about .item {
+            width: 100%;
+            padding: 0;
+        }
+
+        #about .img{
+            display: none;
+        }
+        
+/*---------mobile timeline---------*/
+        #timeline {
+            background-image: url(../images/bg_timeline_mobile.jpg);
+            background-size: 375px;
+            padding: 60px 30px; 
+            height: 1880px;
+        }
+
+        #timeline h2 {
+            width: 65%;
+/*            padding-left: 15%;*/
+            margin-left: 35%;
+        }
+        
+        #timeline h3{
+            border-bottom: 1px solid black;
+/*            padding-left: 15%;*/
+            margin-left: 35%;
+            width: 65%;
+        }
+
+        #timeline p{
+            padding-left: 35%;
+            padding-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        #timeline img {
+            display: none;
+        }
+        
+/*---------mobile features---------*/
+        #features {
+            display: none;
+        }
+        
+        #features_mobile{
+            background-image: none;
+            background-color: #638269;
+            height: auto;
+            padding: 50px 30px 40px 30px; 
+            font-size: 1.2em;
+            color: white;
+        }
+        
+        #features_mobile h{
+            font-size: 3em;
+            font-weight: bold;
+        }
+        
+        #features_mobile h2{
+            width: 100%;
+            border-color: white;
+        }
+        
+        #features_mobile ol{
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        
+        #features_mobile img{
+            padding: 30px 30px 50px 30px;
+            width: 100%;
+        }
+        
+        .phone-mobile{
+            padding: 10px 30px 0 30px;
+        }
+        
+        .side {
+            width: 100%;
+        }
+        
+/*---------mobile stories---------*/
+        #stories {
+             padding: 60px 30px; 
+        }
+
+        #stories h2{
+            width: 100%;
+        }
+        
+        #stories img {
+            padding-bottom: 10px;
+            padding-left: 50%;
+            width: 100%;
+            margin-bottom: -40px;
+        }
+        
+        #stories .bob{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        #stories .bobette{
+            margin: 0;
+            width: 100%;
+        }
+
+/*---------mobile background---------*/
+        .background {
+            background-image: none;
+            background-color: #638269;
+        }
+/*---------mobile purchase---------*/
+        #purchase {
+            padding: 60px 30px 50px 30px; 
+            display: block;
+        }
+
+        #purchase .right {
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 0;
+            display: block;
+        }
+        
+        #logos-desktop {
+            display: none;
+        }
+        
+        #logos-mobile {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 30px;
+        }
+        
+        #purchase img {
+            width: 40%;   
+            padding: 10px 0px;
+        }
+        
+/*---------mobile locations---------*/
+        #locations {
+/*            text-align: right;*/
+            padding: 0px 30px; 
+            width: 100%;
+            display: block;
+            margin: 0;
+        }
+        
+        #locations p{
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        
+        #locations h3{
+            border-bottom: none;
+            width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 2px;
+        }
+
+        #locations .right{
+            display: none;
+        }
+        
+        #locations .left {
+            width: 100%;
+        }
+        
+        #locations .left h2{
+            width: 100%;
+        }
+        
+        input {
+            width: 100%;
+            height: 5px;
+            padding: 15px;
+        }
+        
+/*---------mobile contact---------*/
+        #contact-us {
+            background-image: none;
+            background-color: #638269; 
+            padding: 60px 30px; 
+            display: block;
+        }
+        
+        #contact-us h2{
+            width: 99%
+        }
+        
+        #contact-us h5 {
+            width: 50;
+            padding-bottom: 5%;
+
+        }
+        
+        #contact-us p{
+            padding-bottom: 5px;
+        }
+
+        #contact-us img{
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        #contact-us .left{
+            width: 100%;
+        }
+
+        #contact-us .right{
+            padding-left: 5%;
+            width: 30%;
+            display: none;
+        }
+        #contact-us .us{
+            padding-top: 70px;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        #contact-us .us h5{
+            width: 100%;
+            padding-top: 5px;
+        }
+        
+        #contact-us .icons{
+            text-align: center;
+            padding-top: 0 15px 10 20px;
+            font-size: 2em;
+        }
+        
+        #contact-us i
+        {
+            padding: 0 10px;
+        }
+        
+        #contact-us img{
+            padding-left: 10px;
+            width: 70%;
+        }
+
+        .button
+        {
+            width: 60%;
+            border-radius: 5px;
+            padding: 4px;
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+        
+/*---------footer---------*/
+        footer {
+            padding: 20px 0;
+            text-align: center;
+        }
+  
+}
