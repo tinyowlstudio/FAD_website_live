@@ -548,10 +548,10 @@ input{
 /*---------Contact CSS---------*/
 
 #contact-us {
-/*    background-image: url(../images/bg_contact.png);*/
+    background-image: linear-gradient(to bottom, rgba(52,71,51,0), rgba(52,71,51,.5) 15%, rgba(10,46,32,1));
     background-repeat: no-repeat;
     padding: 70px 5%;
-    display: flex;
+/*    display: flex;*/
     justify-content: space-between;
     color: white;
     width: 100%;
@@ -577,8 +577,8 @@ input{
 
 #contact-us .right{
     text-align: right;
-    width: 40%;
-    padding-right: 5px;
+/*    width: 40%;*/
+    padding-right: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -588,14 +588,19 @@ input{
     width: 100%;
 }
 
+#contact-us h5:first-child {
+    padding-right: 67px;
+}
+
 #contact-us .box{
-    padding: 5% 0 5% 5%;
-    width: 29%;
+    padding: 2% 0 1% 5%;
+    width: 18%;
     text-align: center;
 }
 
 .box img {
     width: 100%;
+    padding-bottom: 10px;
 }
 
 
@@ -921,10 +926,12 @@ footer {
         
 /*---------mobile contact---------*/
         #contact-us {
+/*
             background-image: none;
             background-color: #638269; 
+*/
             padding: 60px 30px; 
-            display: block;
+/*            display: block;*/
         }
         
         #contact-us h2{
@@ -934,7 +941,11 @@ footer {
         #contact-us h5 {
             width: 50;
             padding-bottom: 5%;
-
+        }
+        
+        #contact-us h5:first-child {
+            padding-right: 0;
+            line-height: 1.8;
         }
         
         #contact-us p{
